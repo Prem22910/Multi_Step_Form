@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle, rgba(147,221,236,1) 28%, rgba(32,74,83,1) 100%, rgba(48,154,200,0.7346288857339811) 129%);  
+  /* background-color: rgba(96, 222, 180, 0.8); */
+}
+.container {
+  max-width: 400px;
+  width: 90%;
+  padding: 20px;
+  box-shadow: 0 0 20px #00000020;
+  border: 5px solid rgba(255, 255, 255, 0.258);
+  border-radius: 8px;
+  background-color: rgb(219, 243, 242);
+}
+.step {
+  display: none;
+}
+.step.active {
+  display: block;
+}
+.form-group {
+  width: 100%;
+  margin-top: 20px;
+}
+.form-group input {
+  width: 100%;
+  border: 3px solid rgba(128, 128, 128, 0.4);
+  padding: 5px;
+  font-size: 18px;
+  margin-top: 5px;
+  border-radius: 10px;
+}
+button.next-btn, button.previous-btn, button.submit-btn {
+  float: right;
+  margin-top: 20px;
+  padding: 10px 30px;
+  border: 2px solid rgba(0, 0, 0, 0.415);
+  border-radius: 30px;
+  outline: none;
+  box-shadow: 0 0 20px #00000020;
+  background-color: rgb(111, 215, 219);
+  font-family: "Lucida Grande";
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+}
+button.previous-btn {
+  float: left;
+}
+button.submit-btn {
+  background-color: rgba(24, 105, 236, 0.358);
+}
